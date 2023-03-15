@@ -1,0 +1,20 @@
+*.log*
+.cache
+.DS_Store
+.idea
+
+
+# npm
+node_modules
+package-lock.json
+
+# test
+**/test/coverage
+
+# dist file
+es
+lib
+dist
+**/site-dist
+changelog.generated.md
+stats.html

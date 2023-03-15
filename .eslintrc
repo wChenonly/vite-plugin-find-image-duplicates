@@ -1,0 +1,13 @@
+{
+  "extends": "@antfu",
+  "rules": {
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "arrow-parens": "off",
+    "no-console": "off",
+    "brace-style": "off",
+    "@typescript-eslint/brace-style": "off",
+    "antfu/if-newline": "off",
+    "operator-linebreak": "off"
+  }
+}

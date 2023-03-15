@@ -1,0 +1,77 @@
+{
+  "name": "vite-plugin-find-image-duplicates",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@7.12.0",
+  "description": "Find out if there are duplicate images in the project",
+  "author": "weifan",
+  "license": "ISC",
+  "homepage": "https://github.com/wChenonly/vite-plugin-find-image-duplicates#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wChenonly/vite-plugin-find-image-duplicates.git"
+  },
+  "bugs": "https://github.com/wChenonly/vite-plugin-find-image-duplicates/issues",
+  "keywords": [
+    "vite",
+    "image",
+    "duplicates"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "play": "nr -C playground build",
+    "prepublishOnly": "pnpm run build",
+    "release": "bumpp  --commit 'release: @wash/tool v' &&  pnpm publish",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "npx simple-git-hooks"
+  },
+  "peerDependencies": {
+    "vite": "^3.1.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0",
+    "@antfu/ni": "^0.18.0",
+    "@types/node": "^18.7.18",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.23.1",
+    "nano-staged": "^0.8.0",
+    "picocolors": "^1.0.0",
+    "pnpm": "^7.12.0",
+    "prettier": "^2.8.4",
+    "simple-git-hooks": "^2.8.1",
+    "typescript": "^4.8.3",
+    "unbuild": "^0.8.11",
+    "vite": "^3.1.2"
+  },
+  "nano-staged": {
+    "*.{ts,tsx,js,jsx,vue}": "eslint --fix",
+    "*.{ts,tsx,js,jsx,vue,less,css,md}": "prettier --write"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx nano-staged"
+  }
+}
