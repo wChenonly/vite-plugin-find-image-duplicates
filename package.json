@@ -46,8 +46,7 @@
     "play": "nr -C playground build",
     "prepublishOnly": "pnpm run build",
     "release": "bumpp  --commit 'release: @wash/tool v' &&  pnpm publish",
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "npx simple-git-hooks"
+    "preinstall": "npx only-allow pnpm"
   },
   "peerDependencies": {
     "vite": "^3.1.0"
