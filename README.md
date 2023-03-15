@@ -16,7 +16,7 @@ English | [简体中文](./README.zh_CN.md)
 | `imageType`                 | No       | The type of image you need to find, default`'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'` | `Array<string>` | `findImageDuplicates({ imageType: ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp',...] })` |
 | `exitOnDuplicate`           | No       | Whether to exit the process after finding the duplicate picture, by default `ture` Exit the process   | `Boolean`       | `findImageDuplicates({ exitOnDuplicate:false })`                                                     |
 
-## install
+## Install
 
 ```bash
 npm install vite-plugin-find-image-duplicates -D
