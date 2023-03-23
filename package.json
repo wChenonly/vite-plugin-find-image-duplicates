@@ -45,8 +45,7 @@
     "lint": "eslint .",
     "play": "nr -C playground build",
     "prepublishOnly": "pnpm run build",
-    "release": "bumpp  --commit 'release: @wash/tool v' &&  pnpm publish",
-    "preinstall": "npx only-allow pnpm"
+    "release": "bumpp  --commit 'release: @wash/tool v' &&  pnpm publish"
   },
   "peerDependencies": {
     "vite": ">=3"
