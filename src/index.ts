@@ -42,6 +42,7 @@ export default function findImageDuplicates(options: Options = {}): Plugin {
   return {
     name: 'vite:find-image-duplicates',
     async buildStart() {
+      hashTable.clear()
       for (const imagePath of imagePaths) {
         const absolutePath = path.resolve(process.cwd(), imagePath)
         if (!existsSync(absolutePath)) {
