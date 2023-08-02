@@ -4,7 +4,7 @@
   "version": "0.0.8",
   "packageManager": "pnpm@8.6.11",
   "description": "Find out if there are duplicate images in the project",
-  "author": "weifan",
+  "author": "wChenonly",
   "license": "MIT",
   "homepage": "https://github.com/wChenonly/vite-plugin-find-image-duplicates#readme",
   "repository": {
@@ -51,7 +51,7 @@
     "vite": ">=3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.8",
+    "@antfu/eslint-config": "^0.40.0",
     "@antfu/ni": "^0.21.5",
     "@types/node": "^20.4.5",
     "bumpp": "^9.1.1",
