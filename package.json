@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-find-image-duplicates",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "packageManager": "pnpm@8.6.11",
   "description": "Find out if there are duplicate images in the project",
   "author": "wChenonly",
